@@ -26,7 +26,8 @@
    "in_list_view": 1,
    "label": "Passenger",
    "options": "Flight Passenger",
-   "reqd": 1
+   "reqd": 1,
+   "search_index": 1
   },
   {
    "fieldname": "source_airport",
@@ -83,7 +84,7 @@
   },
   {
    "fieldname": "departure_date",
-   "fieldtype": "Data",
+   "fieldtype": "Date",
    "in_standard_filter": 1,
    "label": "Departure Date",
    "reqd": 1
@@ -113,7 +114,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-11-19 15:01:45.886513",
+ "modified": "2026-11-19 16:55:46.071255",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket",
