@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[]",
+ "content": "[{\"id\": \"s1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"Airlines\", \"col\": 4}}, {\"id\": \"s2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"All Passengers\", \"col\": 4}}, {\"id\": \"s3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"All Airplanes\", \"col\": 4}}]",
  "creation": "2026-11-19 15:33:42.683872",
  "custom_blocks": [],
  "docstatus": 0,
@@ -11,7 +11,7 @@
  "is_hidden": 0,
  "label": "Airplane Mode",
  "links": [],
- "modified": "2026-11-19 15:33:42.683872",
+ "modified": "2026-11-19 16:00:40.772072",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Mode",
