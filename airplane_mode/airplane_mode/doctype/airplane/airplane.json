@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{airline}-{###}",
  "creation": "2026-11-18 21:24:12.912819",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -36,11 +37,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-11-18 21:25:37.598341",
+ "modified": "2026-11-19 15:06:52.508392",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane",
- "naming_rule": "Expression",
+ "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
   {
