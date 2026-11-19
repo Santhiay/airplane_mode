@@ -6,6 +6,7 @@
  "engine": "InnoDB",
  "field_order": [
   "first_name",
+  "full_name",
   "last_name",
   "date_of_birth"
  ],
@@ -28,6 +29,12 @@
    "in_list_view": 1,
    "label": "Date Of Birth",
    "reqd": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
@@ -38,7 +45,7 @@
    "link_fieldname": "passenger"
   }
  ],
- "modified": "2026-11-19 15:08:49.524492",
+ "modified": "2026-11-19 17:24:09.064616",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Flight Passenger",
@@ -64,5 +71,5 @@
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
- "title_field": "first_name"
+ "title_field": "full_name"
 }
