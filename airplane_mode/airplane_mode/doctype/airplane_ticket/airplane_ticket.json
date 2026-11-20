@@ -15,7 +15,9 @@
   "flight",
   "seat",
   "destination_airport_code",
-  "amount",
+  "total_amount",
+  "section_break_qptb",
+  "add_ons",
   "depature_details_section",
   "departure_date",
   "duration_of_flight",
@@ -122,16 +124,27 @@
    "label": "Flight Price"
   },
   {
-   "fieldname": "amount",
+   "fieldname": "total_amount",
    "fieldtype": "Currency",
-   "label": "Amount"
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_qptb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "add_ons",
+   "fieldtype": "Table",
+   "label": "Add Ons",
+   "options": "Airplane Ticket Add-on Item"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-11-19 20:39:48.191083",
+ "modified": "2026-11-20 10:00:13.495545",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket",

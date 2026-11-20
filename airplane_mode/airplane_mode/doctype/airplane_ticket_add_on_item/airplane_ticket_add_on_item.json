@@ -1,27 +1,39 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-11-19 20:41:37.383836",
+ "creation": "2026-11-20 09:56:37.875309",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "section_break_rhpw"
+  "item",
+  "amount"
  ],
  "fields": [
   {
-   "fieldname": "section_break_rhpw",
-   "fieldtype": "Section Break"
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item",
+   "options": "Airplane Ticket Add-on Type",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Amount"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-11-19 20:41:37.383836",
+ "modified": "2026-11-20 10:03:25.490763",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
- "name": "Add Ons",
+ "name": "Airplane Ticket Add-on Item",
  "owner": "Administrator",
  "permissions": [],
  "row_format": "Dynamic",
