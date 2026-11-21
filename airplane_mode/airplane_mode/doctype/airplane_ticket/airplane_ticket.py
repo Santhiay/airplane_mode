@@ -10,6 +10,7 @@ from frappe.model.document import Document
 
 class AirplaneTicket(Document):
 	def before_insert(self):
+		self.validate_capacity()
 		self.seat = f"{random.randint(1, 99)}{random.choice('ABCDE')}"
 
 	def validate(self):
@@ -19,6 +20,13 @@ class AirplaneTicket(Document):
 	def before_submit(self):
 		if self.status != "Boarded":
 			frappe.throw(_("Airplane Ticket can be submitted only when the status is Boarded"))
+
+	def validate_capacity(self):
+		airplane = frappe.db.get_value("Airplane Flight", self.flight, "airplane")
+		capacity = frappe.db.get_value("Airplane", airplane, "capacity")
+		ticket_count = frappe.db.count("Airplane Ticket", {"flight": self.flight})
+		if ticket_count >= capacity:
+			frappe.throw(_("No seats available. Tickets sold have reached the airplane capacity."))
 
 	def remove_duplicate_addons(self):
 		seen = set()
