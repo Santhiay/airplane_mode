@@ -10,10 +10,13 @@
   "section_break_oyg0",
   "amended_from",
   "airplane",
+  "gate_number",
   "column_break_jsgp",
   "status",
   "route",
   "is_published",
+  "section_break_tvaf",
+  "crew",
   "airport_details_section",
   "source_airport_code",
   "source_airport",
@@ -137,6 +140,22 @@
    "fieldname": "is_published",
    "fieldtype": "Check",
    "label": "Is Published?"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Gate Number"
+  },
+  {
+   "fieldname": "section_break_tvaf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "crew",
+   "fieldtype": "Table",
+   "label": "Crew",
+   "options": "Airplane Flight Crew"
   }
  ],
  "grid_page_length": 50,
@@ -150,7 +169,7 @@
    "link_fieldname": "flight"
   }
  ],
- "modified": "2026-11-21 08:55:35.132886",
+ "modified": "2026-11-21 09:07:28.827178",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Flight",

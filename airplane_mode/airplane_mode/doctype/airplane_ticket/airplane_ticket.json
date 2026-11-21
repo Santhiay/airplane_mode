@@ -16,6 +16,7 @@
   "seat",
   "destination_airport_code",
   "total_amount",
+  "gate_number",
   "section_break_qptb",
   "add_ons",
   "depature_details_section",
@@ -138,13 +139,20 @@
    "fieldtype": "Table",
    "label": "Add Ons",
    "options": "Airplane Ticket Add-on Item"
+  },
+  {
+   "fetch_from": "flight.gate_number",
+   "fieldname": "gate_number",
+   "fieldtype": "Data",
+   "label": "Date Number",
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-11-21 08:55:35.460158",
+ "modified": "2026-11-21 09:08:46.244966",
  "modified_by": "Administrator",
  "module": "Airplane Mode",
  "name": "Airplane Ticket",
